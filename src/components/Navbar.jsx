@@ -6,9 +6,10 @@ const Navbar = () => {
 
   const navButtons = {
     home: 'Home',
-    aboutUs: 'About Us',
-    latestNews: 'Latest News',
+    whatWeDo: 'What We Do',
     meetTheTeam: 'Meet The Team',
+    merch: 'Merch Store',
+    aboutUs: 'About Us',
     contactUs: 'Contact Us',
   };
 
