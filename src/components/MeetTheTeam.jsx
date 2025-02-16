@@ -1,6 +1,6 @@
 import { useState } from "react";
 import marcus from "../assets/images/2k.jpeg";
-import baloww from "../assets/images/baloww.jpg";
+import baloww from "../assets/images/baloww.png";
 import black from "../assets/images/black.jpg";
 import cjAli from "../assets/images/cjali.jpg";
 import flaco from "../assets/images/flaco.jpg";
