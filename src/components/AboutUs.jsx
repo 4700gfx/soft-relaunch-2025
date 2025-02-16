@@ -31,7 +31,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-16 px-6 bg-black text-white">
+    <div className="flex flex-col items-center py-16 px-6 bg-black text-white" id='AboutUs'>
       <h1 className="text-5xl font-bold text-center mb-10">ABOUT US</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
         {timelineEvents.map((event, index) => (

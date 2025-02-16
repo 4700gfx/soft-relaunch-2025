@@ -23,7 +23,7 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10 px-6 bg-black text-white mx-auto w-11/12">
+    <div className="flex flex-col items-center py-10 px-6 bg-black text-white mx-auto w-11/12" id='WhatWeDo'>
       <h1 className="text-5xl font-bold text-center mb-15">WHAT WE DO 🎵</h1>
       <div className="flex flex-col md:flex-row justify-center gap-6 w-full max-w-8xl">
         {services.map((service, index) => (

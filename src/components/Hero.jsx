@@ -47,7 +47,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <main className="bg-black text-white py-8 px-5 min-h-screen flex flex-col items-center">
+    <main className="bg-black text-white py-8 px-5 min-h-screen flex flex-col items-center" id="Home">
       {/* Hero Content */}
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-3xl md:text-5xl font-bold uppercase leading-tight">

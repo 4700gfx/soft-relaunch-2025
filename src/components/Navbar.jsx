@@ -5,12 +5,21 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navButtons = {
-    home: 'Home',
-    whatWeDo: 'What We Do',
-    meetTheTeam: 'Meet The Team',
-    merch: 'Merch Store',
-    aboutUs: 'About Us',
-    contactUs: 'Contact Us',
+    Home: 'Home',
+    WhatWeDo: 'What We Do',
+    MeetTheTeam: 'Meet The Team',
+    Merch: 'Merch Store',
+    AboutUs: 'About Us',
+    ContactUs: 'Contact Us',
+  };
+
+  // Scroll to section function (updated to match case-sensitive IDs)
+  const scrollToSection = (id) => {
+    const section = document.querySelector(`#${id}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false); // Close the mobile menu when an item is clicked
+    }
   };
 
   return (
@@ -52,6 +61,7 @@ const Navbar = () => {
             <li
               key={key}
               className="hover:bg-gray-500 hover:text-gray-300 text-lg font-bold px-4 py-2 rounded-full cursor-pointer transition duration-300"
+              onClick={() => scrollToSection(key)} // Use key directly
             >
               {navButtons[key]}
             </li>

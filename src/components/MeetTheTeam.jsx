@@ -1,6 +1,6 @@
 import { useState } from "react";
 import marcus from "../assets/images/2k.jpeg";
-import baloww from "../assets/images/baloww.png";
+import baloww from "../assets/images/baloww.png"; //New Baloww File
 import black from "../assets/images/black.jpg";
 import cjAli from "../assets/images/cjali.jpg";
 import flaco from "../assets/images/flaco.jpg";
@@ -23,7 +23,7 @@ const MeetTheTeam = () => {
   const [selectedArtist, setSelectedArtist] = useState(null);
 
   return (
-    <div className="text-center">
+    <div className="text-center" id="MeetTheTeam">
       <h1 className="text-5xl font-bold mb-10">Meet The Team</h1>
       <div className="flex justify-center gap-8 flex-wrap">
         {artists.map((artist, index) => (

@@ -12,11 +12,11 @@ function App() {
   return (
     <div className='text-white'>
       <Navbar />
-      <Hero />
+      <Hero id="#Home"/>
       <WordMorph/>
-      <WhatWeDo/>
-      <MeetTheTeam/>
-      <AboutUs />
+      <WhatWeDo id="WhatWeDo"/>
+      <MeetTheTeam id="MeetTheTeam"/>
+      <AboutUs id="AboutUs" />
       {/* <ContactUs/> */}
       <Footer/>
     </div>
