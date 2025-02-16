@@ -7,25 +7,25 @@ const AboutUs = () => {
     {
       year: "2020",
       description:
-        "After being more of a Project Label from 2017, Shekelton 'Blackmon Don' Jean and Tavares 'Suppa' Kidd founded 4700 Enterprises. The goal was to mainly focus on Music Production and Music Publishing via Instrumental Albums. Four producers signed as some of the first signees of the label, helping to establish a presence in the music industry.",
+        "After founding a previous collective, Shekelton 'Blackmon Don' Jean and Tavares 'Suppa' Kidd founded 4700 Enterprises. Their purpose was simple. Become an establish collective within the music industry. The business model at that time were to provide Music Production and Engineering services while working to put out different instrumental releases from founding signees such as Flaco Royale, Timothy Branch and CJ Ali.",
       image: img1,
     },
     {
       year: "2021",
       description:
-        "Releases such as 'You Say You Understand', 'Flacodopolis', and 'Ups and Downs' were some of the first releases on all streaming platforms. The label also focused on producing for other artists within the area such as LoveSK, Slicknastyslick, and Tweleven, among others.",
+        "Releases such as 'You Say You Understand', 'Flacodopolis', and 'Ups and Downs' were some of the first releases on all streaming platforms from the label. The label also focused on producing for other artists within the Miami Music Scene such as LoveSK, Slicknastyslick, and Tweleven, among others. The label continued to go through multiple relaunches and reconfigurations to adapt to the changing times.",
       image: img3,
     },
     {
       year: "2023",
       description:
-        "One of the first full-length Rap and R&B albums was released with 'Suppa Sunday.' This release was pivotal in the growth of the company, providing a new audience while establishing connections with artists such as Geesus Shuttlesworth, KT The Genius, among others.",
+        "One of the first full-length Rap and R&B albums was released with 'Suppa Sunday.' This release was pivotal in the growth of the company, providing a new audience while establishing connections with artists such as Geesus Shuttlesworth, KT The Genius, among others. The label quickly started to work on adding it's first artists to the company.",
       image: img7,
     },
     {
       year: "2024",
       description:
-        "Baloww and Biig Geech signed to the label, becoming the first recording artists within the company. Singles from both artists were released and they continue to work with the label until today, At this time they are working to have more projects out",
+        "Baloww and Biig Geech signed to the label, becoming the first recording artists within the company. This became a new chapter for the label as it started to release more singles in anticipation of both artist albums. In September, Baloww released singles such as 'IDGAF' and 'Run Away' while Biig Geech relesed 'Roll Some'. The team continues to work with artists outside of the label as they prepare for their 2025 releases.",
       image: img7,
     },
   ];

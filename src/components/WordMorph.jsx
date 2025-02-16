@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
 
 const words = [
-  { type: "text", content: "Creative + Efficient" },
-  { type: "text", content: "Innovative + Relentless" },
-  { type: "text", content: "Bold + Clever" },
-  { type: "text", content: "Dynamic + Limitless" },
+  { type: "text", content: "Creative + Efficient 📥" },
+  { type: "text", content: "Innovative + Relentless ⚛️" },
+  { type: "text", content: "Calculated + Soulful 📜" },
+  { type: "text", content: "Dynamic + Limitless ♾️" },
   { type: "image", src: logo, alt: "Logo" }
 ];
 

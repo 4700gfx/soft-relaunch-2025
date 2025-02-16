@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs';
 import WhatWeDo from './components/WhatWeDo';
 import LatestNews from './components/LatestNews';
 import WordMorph from './components/WordMorph';
+import MeetTheTeam from './components/MeetTheTeam';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <WordMorph/>
       <WhatWeDo/>
+      <MeetTheTeam/>
       <AboutUs />
       <LatestNews />
     </div>
