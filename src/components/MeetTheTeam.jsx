@@ -69,8 +69,7 @@ const MeetTheTeam = () => {
                     frameBorder="0"
                     style={{
                       width: '100%',
-                      height: 'auto',
-                      maxWidth: '660px',
+                      height: 'auto',  // Adjust height as needed
                       background: 'transparent',
                       overflow: 'hidden'
                     }}
