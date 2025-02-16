@@ -1,8 +1,8 @@
-# React + Vite
+4700 Enetrprises Website Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the README.md Page for the 2025 Website Relaunch, 
+This will serve as a reference for future versions of this website as we will be intergrating different technologies to improve the traffic of the website. 
+We want to make sure that we use every aspect of the website and optimize them as periodically as we can. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Navbar Section 
+ 
