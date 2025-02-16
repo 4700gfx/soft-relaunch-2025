@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
 
         {/* Center: Navigation Links */}
-        <ul className="flex flex-1 justify-center space-x-8 bg-zinc-700 rounded-full px-12 py-3  mx-22">
+        <ul className="flex flex-1 justify-center space-x-8 bg-zinc-700 rounded-full px-12 py-3 mx-22">
           {Object.keys(navButtons).map((key) => (
             <li 
               key={key} 

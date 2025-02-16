@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import logo from '../assets/images/logo.png';
 import img1 from '../assets/images/img1.jpeg';
 import img2 from '../assets/images/img2.jpeg';
@@ -47,7 +47,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <main className="bg-black text-white py-20 px-5 min-h-screen flex flex-col items-center">
+    <main className="bg-black text-white py-8 px-5 min-h-screen flex flex-col items-center">
       {/* Hero Content */}
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold uppercase leading-tight">
@@ -88,7 +88,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom Logo Banner */}
-      <div className="relative overflow-hidden mt-12 px-5 w-full">
+      <div className="relative overflow-hidden mt-10 px-5 w-full">
         <div
           ref={bottomScrollRef}
           className="flex gap-5 overflow-x-auto whitespace-nowrap no-scrollbar"

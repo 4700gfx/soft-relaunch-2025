@@ -1,0 +1,31 @@
+.word-morph-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;           /* Short section height */
+  font-size: 4rem;         /* Larger font for text */
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;        /* In case image/text exceeds container */
+}
+
+.morphing-word {
+  display: inline-block;
+  opacity: 0;
+  animation: morph 3s ease-in-out infinite; /* Increased duration and smooth easing */
+}
+
+@keyframes morph {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);  /* Slightly less aggressive scale */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);    /* Normal scale at the peak */
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);  /* Slightly less aggressive scale */
+  }
+}
