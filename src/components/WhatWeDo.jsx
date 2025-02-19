@@ -7,7 +7,7 @@ const WhatWeDo = () => {
   const services = [
     {
       title: "Music Distribution 🏢",
-      description: "We distribute music from our signees, contributors, and other collaborators within the 4700 Network. We process all releases with a professional rollout to ensure maxium reach and visibility. This continues to build our digital footprint in the industry while building a wider community",
+      description: "We distribute music from our signees, contributors, and other collaborators within the 4700 Network. We process all releases with a professional rollout to ensure maxium reach and visibility. This continues to build our digital footprint in the industry while building a wider community and audience experience",
       image: service1, // Placeholder image
     },
     {

@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <p className="text-center text-sm mt-10 text-white">&copy; {new Date().getFullYear()} All Rights Reserved</p>
+      <p className="text-center text-sm mt-10 text-white">&copy; {new Date().getFullYear()} All Rights Reserved | 4700 Enterprises LLC. </p>
     </footer>
   );
 };
