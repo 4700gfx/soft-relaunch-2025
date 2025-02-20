@@ -25,6 +25,7 @@ const MeetTheTeam = () => {
   return (
     <div className="text-center" id="MeetTheTeam">
       <h1 className="text-5xl font-bold mb-10">Meet The Team</h1>
+      <p>4700 Enterprises is a Rich Company filled with talent. From our innovative artists to our sound bending producers. We have a team that worth getting to know about.</p>
       <div className="flex justify-center gap-8 flex-wrap">
         {artists.map((artist, index) => (
           <div

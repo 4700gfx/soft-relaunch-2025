@@ -3,7 +3,7 @@ const ContactUs = () => {
     <div className="flex justify-center items-center mt-20">
       <div className="w-full max-w-[500px] bg-white rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-        <p className='text-md p-6 text-black'>Contact Us to reach out to us </p>
+        <p className='text-md p-6 text-black'>If you are a brand, label or entity that would like to reach out with questions comments or concerns. Please feel free to fill out our form. Once submitted, we will follow up with an email providing assistance on your submission/ </p>
         <form className="flex flex-col">
           <input
             type="text"
