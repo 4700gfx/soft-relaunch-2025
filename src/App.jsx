@@ -6,20 +6,29 @@ import WhatWeDo from './components/WhatWeDo';
 import WordMorph from './components/WordMorph';
 import MeetTheTeam from './components/MeetTheTeam';
 import Footer from './components/Footer';
+import MerchStore from './components/MerchStore';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div className='text-white'>
-      <Navbar />
-      <Hero id="#Home"/>
-      <WordMorph/>
-      <WhatWeDo id="WhatWeDo"/>
-      <MeetTheTeam id="MeetTheTeam"/>
-      <AboutUs id="AboutUs" />
-      {/* <ContactUs/> */}
-      <Footer/>
-    </div>
+    <Router>
+      <div className='text-white'>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={
+            <>
+              <Hero id='#Home' />
+              <WordMorph />
+              <WhatWeDo id='WhatWeDo' />
+              <MeetTheTeam id='MeetTheTeam' />
+              <AboutUs id='AboutUs' />
+              <Footer />
+            </>
+          } />
+          <Route path='/merch-store' element={<MerchStore />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

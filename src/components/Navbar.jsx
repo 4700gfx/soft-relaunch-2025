@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import { Twitter, Instagram, Facebook } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -7,6 +8,7 @@ import ContactModal from './ContactModal';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navButtons = {
     Home: 'Home',
@@ -18,6 +20,10 @@ const Navbar = () => {
   };
 
   const scrollToSection = (id) => {
+    if (id === 'Merch') {
+      navigate('/merch-store');
+      return;
+    }
     if (id === 'ContactUs') {
       setIsContactModalOpen(true);
       return;
@@ -41,6 +47,7 @@ const Navbar = () => {
             src={logo}
             alt="Company Logo"
             className="h-20 max-h-20 w-auto cursor-pointer"
+            onClick={() => scrollToSection('Home')}
           />
         </motion.div>
 
@@ -87,7 +94,17 @@ const Navbar = () => {
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: 'spring', stiffness: 200 }}
                 >
-                  {navButtons[key]}
+                  {key === 'Home' ? (
+                    <Link to="/" className="text-lg font-bold hover:text-gray-400">
+                      Home
+                    </Link>
+                  ) : key === 'Merch' ? (
+                    <Link to="/merch-store" className="text-lg font-bold hover:text-gray-400">
+                      Merch Store
+                    </Link>
+                  ) : (
+                    navButtons[key]
+                  )}
                 </motion.li>
               ))}
             </motion.ul>
