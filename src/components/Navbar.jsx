@@ -2,9 +2,11 @@ import { useState } from 'react';
 import logo from '../assets/images/logo.png';
 import { Twitter, Instagram, Facebook } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ContactModal from './ContactModal';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const navButtons = {
     Home: 'Home',
@@ -16,6 +18,10 @@ const Navbar = () => {
   };
 
   const scrollToSection = (id) => {
+    if (id === 'ContactUs') {
+      setIsContactModalOpen(true);
+      return;
+    }
     const section = document.querySelector(`#${id}`);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -26,7 +32,6 @@ const Navbar = () => {
   return (
     <nav className="text-white py-4 px-8 mx-auto mt-8">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Left: Animated Company Logo */}
         <motion.div
           className="flex-shrink-0"
           whileHover={{ scale: 1.1, rotate: 3 }}
@@ -39,7 +44,6 @@ const Navbar = () => {
           />
         </motion.div>
 
-        {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-white focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -62,7 +66,6 @@ const Navbar = () => {
           </motion.svg>
         </button>
 
-        {/* Center: Navigation Links with Animation */}
         <AnimatePresence>
           {(isMenuOpen || window.innerWidth >= 1024) && (
             <motion.ul
@@ -91,7 +94,6 @@ const Navbar = () => {
           )}
         </AnimatePresence>
 
-        {/* Right: Social Media Icons with Hover Animation */}
         <div className="flex space-x-4 hidden lg:flex">
           {[
             { link: 'https://twitter.com', Icon: Twitter },
@@ -112,6 +114,11 @@ const Navbar = () => {
           ))}
         </div>
       </div>
+
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </nav>
   );
 };
