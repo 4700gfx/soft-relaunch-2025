@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import hoodie from '../assets/images/placeholder-hoodie.jpg';
 import hat from '../assets/images/placeholder-hat.jpg';
 import rack from '../assets/images/placeholder-rack.jpg';
@@ -27,9 +28,9 @@ const MerchStore = () => {
         />
         <div className="relative z-10 max-w-3xl">
           <h2 className="text-4xl font-bold mb-4">Merch Store</h2>
-          <p className="text-md">
-            They don't do merch like this anymore! A new website always calls for a new merch store. 
-            Check out our store for exclusive 4700 Enterprises gear – hats, shirts, and more. Make sure to use 47DAY for new customers to get up to 47% off your favorite merch. Sale ends 4/14.
+          <p className="text-lg">
+          They don't do merch like this anymore! A new website always calls for a new merch store. 
+          Check out our store for exclusive 4700 Enterprises gear – hats, shirts, and more. Make sure to use 47DAY for new customers to get up to 47% off your favorite merch. Sale ends 4/14.
           </p>
         </div>
       </div>
@@ -47,29 +48,44 @@ const MerchStore = () => {
         ))}
       </div>
 
-      {/* Merch Items Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-        {filteredItems.map(item => (
-          <div
-            key={item.id}
-            className="bg-[#D5D6D5] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <img
-              src={item.img}
-              alt={item.title}
-              className="rounded-md mb-4 w-full h-40 object-cover transition-transform duration-300 hover:rotate-3"
-            />
-            <h3 className="text-2xl font-semibold mb-2 text-[#020202]">{item.title}</h3>
-            <p className="text-[#C0C0AF] text-2xl font-bold">{item.price}</p>
-            <p className="text-sm text-[#000000] opacity-70 mb-4">Premium quality {item.title.toLowerCase()} available now.</p>
-            <button className="mt-4 bg-[#020202] text-[#EEEFEC] py-2 px-6 rounded-lg hover:bg-[#000000] transition duration-300">
-              Buy Now
-            </button>
-          </div>
-        ))}
-      </div>
+      {/* Merch Items Grid with Animation */}
+      <AnimatePresence mode="wait">
+        <motion.div 
+          key={filter}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10"
+        >
+          {filteredItems.map(item => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+              className="bg-[#D5D6D5] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="rounded-md mb-4 w-full h-40 object-cover transition-transform duration-300 hover:rotate-3"
+              />
+              <h3 className="text-2xl font-semibold mb-2 text-[#020202]">{item.title}</h3>
+              <p className="text-[#C0C0AF] text-2xl font-bold">{item.price}</p>
+              <p className="text-sm text-[#000000] opacity-70 mb-4">Premium quality {item.title.toLowerCase()} available now.</p>
+              <button className="mt-4 bg-[#020202] text-[#EEEFEC] py-2 px-6 rounded-lg hover:bg-[#000000] transition duration-300">
+                Buy Now
+              </button>
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };
 
 export default MerchStore;
+
+  
