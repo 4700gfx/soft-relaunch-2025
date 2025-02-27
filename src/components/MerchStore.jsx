@@ -4,6 +4,9 @@ import hoodie from '../assets/images/placeholder-hoodie.jpg';
 import hat from '../assets/images/placeholder-hat.jpg';
 import rack from '../assets/images/placeholder-rack.jpg';
 import shirt from '../assets/images/placeholder-shirt.jpg';
+import sweater from '../assets/images/placeholder-sweater.jpg';
+import beanie from '../assets/images/placeholder-beanie.jpg';
+import logo from '../assets/images/logo.png';
 
 const MerchStore = () => {
   const [filter, setFilter] = useState('all');
@@ -12,6 +15,8 @@ const MerchStore = () => {
     { id: 1, title: 'T-Shirt', price: '$25', category: 'shirt', img: shirt },
     { id: 2, title: 'Hoodie', price: '$50', category: 'jacket', img: hoodie },
     { id: 3, title: 'Cap', price: '$15', category: 'hat', img: hat },
+    { id: 4, title: 'Sweater', price: '$40', category: 'jacket', img: sweater },
+    { id: 5, title: 'Beanie', price: '$20', category: 'hat', img: beanie },
   ];
 
   const categories = ['all', 'hat', 'shirt', 'jacket'];
@@ -20,17 +25,22 @@ const MerchStore = () => {
   return (
     <div className="p-8 bg-[#020202] min-h-screen text-[#EEEFEC] mt-20">
       {/* Header Section with Background Overlay */}
-      <div className="relative w-full h-80 flex items-center justify-center text-center text-white">
+      <div className="relative w-full h-80 flex flex-col items-center justify-center text-center text-white">
         <img 
           src={rack} 
           alt="Merch Background" 
-          className="absolute inset-0 w-11/12 h-full mx-auto object-cover opacity-50 rounded-3xl"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-3xl"
+        />
+        <img 
+          src={logo} 
+          alt="Logo" 
+          className="relative z-10 w-40 h-40"
         />
         <div className="relative z-10 max-w-3xl">
-          <h2 className="text-4xl font-bold mb-4">Merch Store</h2>
+          <h2 className="text-4xl font-bold mb-8">Merch Store</h2>
           <p className="text-lg">
-          They don't do merch like this anymore! A new website always calls for a new merch store. 
-          Check out our store for exclusive 4700 Enterprises gear – hats, shirts, and more. Make sure to use 47DAY for new customers to get up to 47% off your favorite merch. Sale ends 4/14.
+            They don't do merch like this anymore! A new website always calls for a new merch store. 
+            Check out our store for exclusive 4700 Enterprises gear – hats, shirts, and more.
           </p>
         </div>
       </div>
@@ -56,7 +66,7 @@ const MerchStore = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
         >
           {filteredItems.map(item => (
             <motion.div
@@ -87,5 +97,3 @@ const MerchStore = () => {
 };
 
 export default MerchStore;
-
-  
