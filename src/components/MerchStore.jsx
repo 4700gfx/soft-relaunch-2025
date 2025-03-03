@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* eslint-disable no-undef */
 import { motion, AnimatePresence } from 'framer-motion';
 import hoodie from '../assets/images/placeholder-hoodie.jpg';
 import hat from '../assets/images/placeholder-hat.jpg';
