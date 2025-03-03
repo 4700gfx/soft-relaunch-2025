@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import hoodie from '../assets/images/placeholder-hoodie.jpg';
 import hat from '../assets/images/placeholder-hat.jpg';
