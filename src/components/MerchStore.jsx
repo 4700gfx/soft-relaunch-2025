@@ -17,6 +17,7 @@ const MerchStore = () => {
     { id: 3, title: 'Cap', price: '$15', category: 'hat', img: hat },
     { id: 4, title: 'Sweater', price: '$40', category: 'jacket', img: sweater },
     { id: 5, title: 'Beanie', price: '$20', category: 'hat', img: beanie },
+    { id: 6, title: 'Beanie', price: '$50', category: 'hat', img: beanie },
   ];
 
   const categories = ['all', 'hat', 'shirt', 'jacket'];
