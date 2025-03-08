@@ -8,6 +8,7 @@ import img5 from '../assets/images/img5.jpg';
 import img6 from '../assets/images/img6.jpg';
 import img7 from '../assets/images/img7.jpg';
 
+
 const Hero = () => {
   const imageLinks = [img1, img2, img3, img4, img5, img6, img7];
   const logoArray = new Array(40).fill(logo); // Creates an array of logos

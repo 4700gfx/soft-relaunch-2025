@@ -1,19 +1,56 @@
 .word-morph-container {
+  width: 100%;
+  height: 25vh; /* Adjust height based on viewport */
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 200px;           /* Short section height */
-  font-size: 4rem;         /* Larger font for text */
-  font-weight: bold;
+  justify-content: center;
   text-align: center;
-  overflow: hidden;        /* In case image/text exceeds container */
+  position: relative;
+  overflow: hidden;
 }
 
 .morphing-word {
-  display: inline-block;
+  position: absolute;
   opacity: 0;
-  animation: morph 3s ease-in-out infinite; /* Increased duration and smooth easing */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  font-size: 4vw; /* Increased font size */
+  font-weight: bold;
+  color: white; /* Adjust if needed */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Makes text more visible */
 }
+
+.morphing-word.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* 📱 Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .word-morph-container {
+    height: 35vh; /* Reduce height for smaller screens */
+  }
+
+  .morphing-word {
+    font-size: 7vw; /* Even larger text on smaller screens */
+  }
+}
+
+/* 🖥️ Larger Screen Adjustments */
+@media (min-width: 1200px) {
+  .word-morph-container {
+    height: 50vh;
+  }
+
+  .morphing-word {
+    font-size: 5vw; /* Big and bold for large screens */
+  }
+}
+
+
+
 
 @keyframes morph {
   0% {

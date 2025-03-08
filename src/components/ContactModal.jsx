@@ -49,7 +49,7 @@ const ContactModal = ({ isOpen, onClose }) => {
               ></textarea>
             </div>
             <button
-              className="w-full bg-yellow-300 text-gray-800 py-3 px-6 rounded-lg hover:bg-yellow-400 transition duration-300"
+              className="w-full bg-slate-500 text-white py-3 px-6 rounded-2xl hover:bg-black transition duration-300"
               type="submit"
             >
               Send Message
