@@ -6,27 +6,27 @@ import img7 from '../assets/images/img6.jpg';
 const AboutUs = () => {
   const timelineEvents = [
     {
-      year: "2020",
+      year: "2017 - 2020",
       description:
-        "After founding a previous collective, Shekelton 'Blackmon Don' Jean and Tavares 'Suppa' Kidd founded 4700 Enterprises. Their purpose was simple. Become an established collective within the music industry. The business model at that time was to provide Music Production and Engineering services while working to put out different instrumental releases from founding signees such as Flaco Royale, Timothy Branch, and CJ Ali.",
+        "After founding a previous collective, Shekelton 'Blackmon Don' Jean and Tavares 'Suppa' Kidd established 4700 Enterprises with a clear vision—to build a recognized and influential collective within the music industry. Their initial business model focused on providing high-quality Music Production and Engineering services while simultaneously developing and releasing instrumental projects. Early signees, including Flaco Royale, Timothy Branch, and CJ Ali, played a pivotal role in shaping the sound and identity of 4700 Enterprises, laying the foundation for what would become a thriving creative powerhouse.",
       image: img1,
     },
     {
-      year: "2021",
+      year: "2021 - 2022",
       description:
-        "Releases such as 'You Say You Understand', 'Flacodopolis', and 'Ups and Downs' were some of the first releases on all streaming platforms from the label. The label also focused on producing for other artists within the Miami Music Scene such as LoveSK, Slicknastyslick, and Tweleven, among others. The label continued to go through multiple relaunches and reconfigurations to adapt to the changing times.",
+        "Early releases like You Say You Understand, Flacodopolis, and Ups and Downs marked the label’s debut across all major streaming platforms, establishing its presence in the industry. Beyond its own catalog, the label played a key role in producing and collaborating with artists from the Miami music scene, including LoveSK, Slicknastyslick, and Tweleven, among others. Over the years, the label has undergone multiple relaunches and strategic reconfigurations, continuously evolving to adapt to shifts in the industry, emerging trends, and the ever-changing landscape of independent music.",
       image: img3,
     },
     {
       year: "2023",
       description:
-        "One of the first full-length Rap and R&B albums was released with 'Suppa Sunday.' This release was pivotal in the growth of the company, providing a new audience while establishing connections with artists such as Geesus Shuttlesworth, KT The Genius, among others. The label quickly started to work on adding its first artists to the company.",
+        "One of the label’s first full-length Rap and R&B albums, Suppa Sunday, marked a significant milestone in its growth. This release not only expanded the label’s audience but also helped forge key connections with artists such as Geesus Shuttlesworth and KT The Genius, among others. Building on this momentum, the label swiftly shifted its focus toward developing its roster, working to bring its first official artists into the fold and further solidify its presence in the industry.",
       image: img7,
     },
     {
-      year: "2024",
+      year: "2024 - Present",
       description:
-        "Baloww and Biig Geech signed to the label, becoming the first recording artists within the company. This became a new chapter for the label as it started to release more singles in anticipation of both artists' albums. In September, Baloww released singles such as 'IDGAF' and 'Run Away' while Biig Geech released 'Roll Some'. The team continues to work with artists outside of the label as they prepare for their 2025 releases.",
+        "Baloww and Biig Geech became the first official recording artists to sign with the label, marking the beginning of a new chapter in the company's evolution. With their addition to the roster, the label ramped up its efforts to release more singles in anticipation of both artists' highly anticipated albums. In September, Baloww dropped impactful singles like IDGAF and Run Away, while Biig Geech released Roll Some, showcasing the label's growing influence. As the team prepares for their 2025 releases, they continue to collaborate with talented artists outside the label, further expanding their reach and strengthening their creative network.",
       image: img7,
     },
   ];
@@ -42,25 +42,29 @@ const AboutUs = () => {
         ABOUT US
       </motion.h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
+      <div className="relative w-full max-w-7xl">
+        <div className="absolute inset-0 border-l-2 border-dashed border-gray-400"></div>
         {timelineEvents.map((event, index) => (
           <motion.div
             key={index}
-            className="flex flex-col bg-white p-6 shadow-lg rounded-xl items-center"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="flex flex-col md:flex-row justify-start items-center md:items-start py-12 md:py-16"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <motion.img
-              src={event.image}
-              alt={`Event ${event.year}`}
-              className="w-full h-48 object-cover rounded-lg mb-4 transition-all duration-500"
-              whileHover={{ scale: 1.05, filter: 'brightness(1.2)' }}
-            />
-            <div className="text-center">
-              <h2 className="text-3xl font-semibold text-black">{event.year}</h2>
-              <p className="text-black mt-4">{event.description}</p>
+            {/* Larger and consistent images with adjusted width and height */}
+            <div className="md:w-96 md:h-72 w-80 h-60 bg-white rounded-lg flex justify-center items-center shadow-xl mb-6 md:mb-0">
+              <motion.img
+                src={event.image}
+                alt={`Event ${event.year}`}
+                className="w-full h-full object-cover rounded-lg"
+                whileHover={{ scale: 1.05, filter: 'brightness(1.2)' }}
+              />
+            </div>
+            <div className="md:ml-8 bg-white text-black rounded-lg p-6 shadow-xl">
+              <h2 className="text-3xl font-semibold">{event.year}</h2>
+              <p className="text-black mt-6 md:mt-4">{event.description}</p>
             </div>
           </motion.div>
         ))}

@@ -36,7 +36,7 @@ const MeetTheTeam = () => {
   return (
     <div className="text-center" id="MeetTheTeam">
       <h1 className="text-5xl font-bold my-5">Meet The Team</h1>
-      <p className="text-center font-italic mb-10 p-10">4700 Enterprises is a Rich Company filled with talent. From our innovative artists to our sound bending producers. We have a team that worth getting to know about. Meet our Roster and their profiles below:</p>
+      <p className="text-center font-italic mb-15 mx-auto px-24 w-5/8">4700 Enterprises is a dynamic and thriving company brimming with exceptional talent. From our visionary artists who push creative boundaries to our groundbreaking producers who redefine sound, we are a collective of innovators. Each member of our team brings something unique to the table, and we believe their stories and craft are worth getting to know. Explore our roster below to discover the profiles of the talented individuals who make 4700 Enterprises a true force in the industry.</p>
       <div className="flex justify-center gap-8 flex-wrap">
         {artists.map((artist, index) => (
           <div

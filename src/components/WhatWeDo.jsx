@@ -7,17 +7,17 @@ const WhatWeDo = () => {
   const services = [
     {
       title: "Music Distribution 🏢",
-      description: "We distribute music from our signees, contributors, and other collaborators within the 4700 Network. We process all releases with a professional rollout to ensure maximum reach and visibility. This continues to build our digital footprint in the industry while building a wider community and audience experience.",
+      description: "We distribute music from our signees, contributors, and collaborators within the 4700 Network, ensuring each release receives a professional rollout for maximum reach and visibility. This strengthens our digital presence in the industry while expanding our community and audience engagement.",
       image: service1,
     },
     {
       title: "Music Production 🥁",
-      description: "We specialize in beat production, audio recording, and engineering for artists and projects within the 4700 Enterprises Collective. With our team of producers and engineers, we continue to provide a catalog of records that we leverage with releases, placements, and other opportunities.",
+      description: "We specialize in beat production, audio recording, and engineering for artists and projects within the 4700 Enterprises Collective. Our team of producers and engineers crafts a diverse catalog of records that we leverage for releases, placements, and various opportunities.",
       image: service2,
     },
     {
       title: "Artist Development 🌱",
-      description: "We help artists creatively develop their brand, sound, image, and reach within the music industry. By providing creative and innovative resources to publish and promote music, we build systems and processes to grow our artists with each release.",
+      description: "We assist artists in developing their brand, sound, image, and reach within the music industry. By offering innovative resources for music publishing and promotion, we establish systems and strategies to support our artists’ growth with every release.",
       image: service3,
     },
   ];
