@@ -3,30 +3,30 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-700 text-white py-10 px-6 mt-15 mb-4 rounded-3xl">
+    <footer className="bg-zinc-700 text-white py-10 px-6 mt-15 mb-4 rounded-3xl w-11/12 mx-auto">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
         <div>
           <h4 className="text-[#C0C0AF] text-lg font-semibold mb-3 transition-transform duration-300 hover:scale-110 hover:text-white">Main Website</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">Home</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">What We Do</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">Meet The Team</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">Home</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">What We Do</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">Meet The Team</a></li>
           </ul>
         </div>
         <div>
           <h4 className="text-[#C0C0AF] text-lg font-semibold mb-3 transition-transform duration-300 hover:scale-110 hover:text-white">Shop</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">Artist Merch</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">4700 Merch</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">4700 + Ravenous</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">Artist Merch</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">4700 Merch</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">4700 + Ravenous</a></li>
           </ul>
         </div>
         <div>
           <h4 className="text-[#C0C0AF] text-lg font-semibold mb-3 transition-transform duration-300 hover:scale-110 hover:text-white">More From 4700</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">Blog</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">FAQs</a></li>
-            <li><a href="#" className="hover:text-[#C0C0AF] transition">More Information</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">Blog</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">FAQs</a></li>
+            <li><a href="#" className="text-sm hover:text-[#C0C0AF] transition">More Information</a></li>
           </ul>
         </div>
         <div>

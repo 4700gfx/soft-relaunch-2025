@@ -42,7 +42,7 @@ const AboutUs = () => {
         ABOUT US
       </motion.h1>
 
-    <p className="text-md text-gray-300 mb-10 max-w-2xl text-center">
+    <p className="text-sm text-gray-300 mb-10 max-w-2xl text-center">
         4700 Enterprises is a creative collective founded in 2017 by Shekelton 'Blackmon Don' Jean and Tavares 'Suppa' Kidd. With a focus on independent artistry, the label has grown to include a diverse roster of artists and producers, shaping a unique sound that blends various genres and influences.
       </p>
       {/* Timeline */}

@@ -33,11 +33,11 @@ const WhatWeDo = () => {
         WHAT WE DO 🎵
       </motion.h1>
       
-      <div className="flex flex-col md:flex-row justify-center gap-6 w-full max-w-8xl">
+      <div className="flex flex-col md:flex-row justify-center gap-6 w-full max-w-8xl mb-12">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="flex flex-col md:flex-row bg-zinc-400 p-6 shadow-lg rounded-xl w-full md:w-1/2 items-center"
+            className="flex flex-col md:flex-row bg-zinc-400 p-4 shadow-lg rounded-xl w-full md:w-1/2 items-center"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -52,18 +52,11 @@ const WhatWeDo = () => {
 
             {/* Text Section */}
             <div className="p-6 text-center md:text-left md:w-2/3">
-              <h2 className="text-3xl font-semibold text-black mb-2 transition-all duration-300 hover:text-zinc-700 hover:scale-105">
+              <h2 className="text-2xl font-semibold text-black mb-2 transition-all duration-300 hover:text-zinc-700 hover:scale-105">
                 {service.title}
               </h2>
-              <p className="text-white mt-2 text-md py-2">{service.description}</p>
-              
-              <motion.button
-                className="bg-black text-white mt-2 px-12 py-3 rounded-full transition-colors duration-300 hover:bg-white hover:text-black"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Learn More 📓
-              </motion.button>
+              <p className="text-white mt-2 text-sm py-2">{service.description}</p>
+             
             </div>
           </motion.div>
         ))}

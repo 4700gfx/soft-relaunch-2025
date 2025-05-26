@@ -86,19 +86,19 @@ const Navbar = () => {
               {Object.keys(navButtons).map((key) => (
                 <motion.li
                   key={key}
-                  className="hover:bg-gray-500 hover:text-gray-300 text-lg font-bold px-4 py-2 rounded-full cursor-pointer transition duration-300"
+                  className="hover:bg-zinc-700 hover:text-white text-lg font-bold px-4 py-2 rounded-full cursor-pointer transition duration-300"
                   onClick={() => scrollToSection(key)}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ type: 'spring', stiffness: 200 }}
                 >
                   {key === 'Home' ? (
-                    <Link to="/" className="text-lg font-bold hover:text-gray-400">
+                    <Link to="/" className="text-lg font-bold hover:text-white">
                       Home
                     </Link>
                   ) : key === 'Merch' ? (
-                    <Link to="/merch-store" className="text-lg font-bold hover:text-gray-400">
+                    <Link to="/merch-store" className="text-lg font-bold hover:text-white">
                       Merch Store
                     </Link>
                   ) : (
@@ -113,8 +113,8 @@ const Navbar = () => {
         <div className="flex space-x-4 hidden lg:flex">
           {[
             { link: 'https://twitter.com', Icon: Twitter },
-            { link: 'https://instagram.com', Icon: Instagram },
-            { link: 'https://facebook.com', Icon: Facebook },
+            { link: 'https://www.instagram.com/4700enterprises/?hl=en', Icon: Instagram },
+            { link: 'https://www.facebook.com/4700Enterprises/', Icon: Facebook },
           ].map(({ link, Icon }, index) => (
             <motion.a
               key={index}

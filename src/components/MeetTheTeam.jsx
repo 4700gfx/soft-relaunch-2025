@@ -34,9 +34,9 @@ const MeetTheTeam = () => {
   const [selectedArtist, setSelectedArtist] = useState(null);
 
   return (
-    <div className="text-center" id="MeetTheTeam">
+    <div className="text-center mb-15" id="MeetTheTeam">
       <h1 className="text-5xl font-bold my-5">Meet The Team</h1>
-      <p className="text-center font-italic mb-15 mx-auto px-24 w-5/8">4700 Enterprises is a dynamic and thriving company brimming with exceptional talent. From our visionary artists who push creative boundaries to our groundbreaking producers who redefine sound, we are a collective of innovators. Each member of our team brings something unique to the table, and we believe their stories and craft are worth getting to know. Explore our roster below to discover the profiles of the talented individuals who make 4700 Enterprises a true force in the industry.</p>
+      <p className="text-center text-sm font-italic mb-15 mx-auto px-24 w-5/8">4700 Enterprises is a dynamic and thriving company brimming with exceptional talent. From our visionary artists who push creative boundaries to our groundbreaking producers who redefine sound, we are a collective of innovators. Each member of our team brings something unique to the table, and we believe their stories and craft are worth getting to know. Explore our roster below to discover the profiles of the talented individuals who make 4700 Enterprises a true force in the industry.</p>
       <div className="flex justify-center gap-8 flex-wrap">
         {artists.map((artist, index) => (
           <div
@@ -47,7 +47,7 @@ const MeetTheTeam = () => {
             <img
               src={artist.image}
               alt={artist.name}
-              className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border border-gray-300 transition-transform transform group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-gray-500"
+              className="w-48 h-48 md:w-48 md:h-48 rounded-full object-cover border border-gray-300 transition-transform transform group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-gray-500"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-full">
               <span className="text-white text-lg font-bold">{artist.name}</span>

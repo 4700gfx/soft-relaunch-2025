@@ -51,10 +51,10 @@ const Hero = () => {
     <main className="bg-black text-white py-8 px-5 min-h-screen flex flex-col items-center" id="Home">
       {/* Hero Content */}
       <div className="max-w-3xl mx-auto text-center">
-        <h1 className="text-3xl md:text-5xl font-bold uppercase leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold uppercase leading-tight">
           The New Standard of The Music Industry 💿
         </h1>
-        <p className="mt-4 text-sm md:text-base">
+        <p className="mt-4 text-sm md:text-sm">
           At 4700 Enterprises, our mission is to revolutionize the music industry through three core competencies: expert music publishing, strategic media promotion, and innovative artist development. Check out website for more information ⬇️
         </p>
         <a href="#" className="inline-block mt-6 bg-zinc-700 text-white rounded-full px-6 py-2 font-medium text-sm md:text-base">
