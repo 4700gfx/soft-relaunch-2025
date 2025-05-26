@@ -6,7 +6,7 @@ import WhatWeDo from './components/WhatWeDo';
 import WordMorph from './components/WordMorph';
 import MeetTheTeam from './components/MeetTheTeam';
 import Footer from './components/Footer';
-import MerchStore from './components/MerchStore';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
               <Footer />
             </>
           } />
-          <Route path='/merch-store' element={<MerchStore />} />
         </Routes>
       </div>
     </Router>

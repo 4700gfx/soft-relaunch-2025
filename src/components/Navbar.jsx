@@ -14,7 +14,6 @@ const Navbar = () => {
     Home: 'Home',
     WhatWeDo: 'What We Do',
     MeetTheTeam: 'Meet The Team',
-    Merch: 'Merch Store',
     AboutUs: 'About Us',
     ContactUs: 'Contact Us',
   };
